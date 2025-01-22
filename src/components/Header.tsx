@@ -1,5 +1,10 @@
 function Header() {
-  return <header>This is the header</header>;
+  return (
+    <header>
+      <p>This is the header</p>
+      <div>small change to test CI pipeline</div>
+    </header>
+  );
 }
 
 export default Header;
