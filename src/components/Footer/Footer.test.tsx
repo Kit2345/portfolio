@@ -13,4 +13,12 @@ describe("Footer renders correctly", () => {
     expect(screen.getByText("Projects")).toBeInTheDocument;
     expect(screen.getByText("Contact Me")).toBeInTheDocument;
   });
+
+  it("the three buttons are in correct order", () => {
+    const buttons = screen.getAllByRole("button");
+    expect(buttons).toHaveLength(3);
+    expect(buttons[0]).toHaveTextContent("About Me");
+    expect(buttons[1]).toHaveTextContent("Projects");
+    expect(buttons[2]).toHaveTextContent("Contact Me");
+  });
 });
