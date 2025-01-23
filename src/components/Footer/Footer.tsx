@@ -1,5 +1,11 @@
 function Footer() {
-  return <div>This is a footer</div>;
+  return (
+    <div>
+      <button></button>
+      <button></button>
+      <button></button>
+    </div>
+  );
 }
 
 export default Footer;
