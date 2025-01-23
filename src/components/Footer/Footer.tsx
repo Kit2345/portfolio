@@ -1,9 +1,9 @@
 function Footer() {
   return (
     <div>
-      <button></button>
-      <button></button>
-      <button></button>
+      <button aria-label="about me">About Me</button>
+      <button aria-label="projects">Projects</button>
+      <button aria-label="contact me">Contact Me</button>
     </div>
   );
 }
