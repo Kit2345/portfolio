@@ -5,4 +5,9 @@ describe("Footer renders correctly", () => {
   beforeEach(() => render(<Footer />));
 
   it("Footer should exist", () => {});
+
+  it("should have three buttons", () => {
+    const buttons = screen.getAllByRole("button");
+    expect(buttons).toHaveLength(3);
+  });
 });
