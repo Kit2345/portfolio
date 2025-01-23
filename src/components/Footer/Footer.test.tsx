@@ -35,4 +35,11 @@ describe("Footer renders correctly", () => {
     const image = screen.getByRole("img");
     expect(image).toHaveAttribute("src", crown_rarity_symbol);
   });
+
+  it("should have a paragraph summarising me", () => {
+    const paragraph = screen.getByRole("paragraph");
+    expect(paragraph).toHaveTextContent("Full-stack software developer");
+    expect(paragraph).toHaveTextContent("research scientist");
+    expect(paragraph).toHaveTextContent("problem-solving");
+  });
 });
