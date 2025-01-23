@@ -1,5 +1,6 @@
 import { screen, render } from "@testing-library/react";
 import Footer from "./Footer";
+import crown_rarity_symbol from "../../assets/crown-rarity-symbol.png";
 
 describe("Footer renders correctly", () => {
   beforeEach(() => render(<Footer />));

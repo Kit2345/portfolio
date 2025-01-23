@@ -11,7 +11,7 @@ function Header() {
       <img
         id="energy-img"
         src={grass_energy}
-        alt="Grass Energy"
+        alt="grass energy"
         className="energy-symbol"
       />
     </div>
