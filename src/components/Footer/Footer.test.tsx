@@ -1,4 +1,5 @@
-import { Screen, render } from "@testing-library/react";
+import { screen, render } from "@testing-library/react";
+import Footer from "./Footer";
 
 describe("Footer renders correctly", () => {
   beforeEach(() => render(<Footer />));
