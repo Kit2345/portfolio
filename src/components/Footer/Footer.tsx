@@ -7,6 +7,10 @@ function Footer() {
       <button aria-label="projects">Projects</button>
       <button aria-label="contact me">Contact Me</button>
       <img src={crown_rarity_image} alt="crown rarity symbol" />
+      <p>
+        Full-stack software developer with extensive problem solving experience
+        as a former academic research scientist
+      </p>
     </div>
   );
 }

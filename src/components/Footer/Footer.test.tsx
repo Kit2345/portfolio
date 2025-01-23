@@ -40,6 +40,6 @@ describe("Footer renders correctly", () => {
     const paragraph = screen.getByRole("paragraph");
     expect(paragraph).toHaveTextContent("Full-stack software developer");
     expect(paragraph).toHaveTextContent("research scientist");
-    expect(paragraph).toHaveTextContent("problem-solving");
+    expect(paragraph).toHaveTextContent("problem solving");
   });
 });
