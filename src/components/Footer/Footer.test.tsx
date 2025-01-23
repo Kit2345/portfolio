@@ -21,4 +21,17 @@ describe("Footer renders correctly", () => {
     expect(buttons[1]).toHaveTextContent("Projects");
     expect(buttons[2]).toHaveTextContent("Contact Me");
   });
+
+  it("the three buttons are in correct order", () => {
+    const buttons = screen.getAllByRole("button");
+    expect(buttons).toHaveLength(3);
+    expect(buttons[0]).toHaveTextContent("About Me");
+    expect(buttons[1]).toHaveTextContent("Projects");
+    expect(buttons[2]).toHaveTextContent("Contact Me");
+  });
+
+  it("should have a crown rarity image", () => {
+    const image = screen.getByRole("img");
+    expect(image).toHaveAttribute("src", crown_rarity_symbol);
+  });
 });
