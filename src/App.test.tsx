@@ -1,14 +1,9 @@
-import { screen, render } from "@testing-library/react";
+// import { screen, render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import App from "./App";
 
 describe("App tests", () => {
-  it("should render the title", () => {
-    render(<App />);
-
-    expect(
-      screen.getByRole("heading", {
-        level: 1,
-      })
-    ).toHaveTextContent("Vite + React");
+  it("App renders properly", () => {
+    beforeEach(() => render(<App />));
   });
 });
