@@ -11,6 +11,11 @@ describe("About Me page should render properly", () => {
     expect(test).toBeInTheDocument();
   });
 
+  it("should have an image", () => {
+    const test = screen.getByRole("img");
+    expect(test).toBeInTheDocument();
+  });
+
   it("this test should fail", () => {
     const test = screen.getByText("This doesn't exist");
     expect(test).toBeInTheDocument();
