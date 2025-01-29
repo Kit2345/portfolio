@@ -27,8 +27,8 @@ describe("About Me page should render properly", () => {
     expect(test_heading).toHaveLength(3);
   });
 
-  it("this test should fail", () => {
-    const test = screen.getByText("This doesn't exist");
-    expect(test).toBeInTheDocument();
-  });
+  //   it("this test should fail", () => {
+  //     const test = screen.getByText("This doesn't exist");
+  //     expect(test).toBeInTheDocument();
+  //   });
 });
