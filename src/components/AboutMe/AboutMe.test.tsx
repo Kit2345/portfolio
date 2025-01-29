@@ -12,6 +12,7 @@ describe("About Me page should render properly", () => {
 
     const heading = screen.getByRole("heading", { level: 1 });
     expect(heading).toBeInTheDocument;
+    expect(heading).toHaveTextContent("About Me");
   });
 
   it("should have an image", () => {

@@ -1,5 +1,11 @@
+import AboutMe from "../AboutMe/AboutMe";
+
 function Main() {
-  return <></>;
+  return (
+    <>
+      <AboutMe />
+    </>
+  );
 }
 
 export default Main;
