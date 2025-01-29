@@ -8,7 +8,11 @@ function AboutMe() {
         <h1>About Me</h1>
       </div>
       <div>
-        <img src={colourlessEnergy} alt="colourless energy" />
+        <img
+          src={colourlessEnergy}
+          alt="colourless energy"
+          className="energy-symbol"
+        />
         <h3>Background:</h3>
         <p>
           I'm a former academic scientist in cancer research and now looking to
@@ -28,7 +32,7 @@ function AboutMe() {
         </p>
       </div>
       <div>
-        <img src={grassEnergy} alt="grass energy" />
+        <img src={grassEnergy} alt="grass energy" className="energy-symbol" />
         <h3>Why coding?</h3>
         <p>
           While I was working in a world Part of my role was to collaborate with
@@ -47,7 +51,7 @@ function AboutMe() {
         </p>
       </div>
       <div>
-        <img src={grassEnergy} alt="grass energy" />
+        <img src={grassEnergy} alt="grass energy" className="energy-symbol" />
         <h3>What do I enjoy outside work?</h3>
         <p>
           I took up sewing a few years ago, I find it relaxing and gives me a
