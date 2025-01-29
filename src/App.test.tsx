@@ -1,8 +1,9 @@
 // import { screen, render } from "@testing-library/react";
-// import App from "./App";
+import { render } from "@testing-library/react";
+import App from "./App";
 
-// describe("App tests", () => {
-//   it("App renders properly", () => {
-//     beforeEach(() => render(<App />));
-//   });
-// });
+describe("App tests", () => {
+  it("App renders properly", () => {
+    beforeEach(() => render(<App />));
+  });
+});
