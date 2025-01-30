@@ -9,6 +9,9 @@ function ContactMe() {
         <a href="https://www.linkedin.com/in/wing-kit-leung/">LinkedIn</a>
         <a href="https://github.com/Kit2345">GitHub</a>
       </div>
+      <div>
+        <form aria-label="form"></form>
+      </div>
     </>
   );
 }

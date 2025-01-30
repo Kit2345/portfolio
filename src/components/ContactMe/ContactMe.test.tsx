@@ -13,7 +13,7 @@ describe("contact me page should render correctly", () => {
 
   it("should have the correct linkedin link", () => {
     const linkedin = screen.getByRole("link", { name: "LinkedIn" });
-    expect(linkedin).toBeInTheDocument;
+    expect(linkedin).toBeInTheDocument();
     expect(linkedin).toHaveAttribute(
       "href",
       "https://www.linkedin.com/in/wing-kit-leung/"
@@ -22,7 +22,12 @@ describe("contact me page should render correctly", () => {
 
   it("should have the correct GitHub link", () => {
     const gitHub = screen.getByRole("link", { name: "GitHub" });
-    expect(gitHub).toBeInTheDocument;
+    expect(gitHub).toBeInTheDocument();
     expect(gitHub).toHaveAttribute("href", "https://github.com/Kit2345");
+  });
+
+  it("should have a contact form", () => {
+    const contactForm = screen.getByRole("form");
+    expect(contactForm).toBeInTheDocument();
   });
 });
