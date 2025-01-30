@@ -6,6 +6,11 @@ describe("contact me page should render correctly", () => {
 
   it("should exist", () => {});
 
+  it("should have a heading with contact me", () => {
+    const contactMe = screen.getByRole("heading", { level: 1 });
+    expect(contactMe).toHaveTextContent("Get in contact");
+  });
+
   it("should have the correct linkedin link", () => {
     const linkedin = screen.getByRole("link", { name: "LinkedIn" });
     expect(linkedin).toBeInTheDocument;
