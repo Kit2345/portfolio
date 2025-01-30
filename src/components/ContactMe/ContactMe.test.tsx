@@ -14,4 +14,10 @@ describe("contact me page should render correctly", () => {
       "https://www.linkedin.com/in/wing-kit-leung/"
     );
   });
+
+  it("should have the correct GitHub link", () => {
+    const gitHub = screen.getByRole("link", { name: "GitHub" });
+    expect(gitHub).toBeInTheDocument;
+    expect(gitHub).toHaveAttribute("href", "https://github.com/Kit2345");
+  });
 });
