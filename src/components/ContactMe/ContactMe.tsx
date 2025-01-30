@@ -17,6 +17,7 @@ function ContactMe() {
           <input type="text" id="email" name="email" />
           <label htmlFor="message">Message</label>
           <textarea id="message" name="message"></textarea>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </>
