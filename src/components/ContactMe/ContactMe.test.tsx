@@ -32,5 +32,8 @@ describe("contact me page should render correctly", () => {
 
     const email = screen.getByLabelText("Email");
     expect(email).toBeInTheDocument();
+
+    const name = screen.getByLabelText("Name");
+    expect(name).toBeInTheDocument();
   });
 });
