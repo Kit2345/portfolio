@@ -10,7 +10,10 @@ function ContactMe() {
         <a href="https://github.com/Kit2345">GitHub</a>
       </div>
       <div>
-        <form aria-label="form"></form>
+        <form aria-label="form">
+          <label htmlFor="email">Email</label>
+          <input type="text" id="email" name="email" />
+        </form>
       </div>
     </>
   );

@@ -26,8 +26,11 @@ describe("contact me page should render correctly", () => {
     expect(gitHub).toHaveAttribute("href", "https://github.com/Kit2345");
   });
 
-  it("should have a contact form", () => {
+  it("should have a contact form with name, email and message fields", () => {
     const contactForm = screen.getByRole("form");
     expect(contactForm).toBeInTheDocument();
+
+    const email = screen.getByLabelText("Email");
+    expect(email).toBeInTheDocument();
   });
 });
