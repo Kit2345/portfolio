@@ -2,7 +2,7 @@ import { screen, render } from "@testing-library/react";
 import Main from "./Main";
 
 describe("main page should render properly", () => {
-  beforeEach(() => render(<Main />));
+  beforeEach(() => render(<Main page={"about"} />));
   it("should exist", () => {});
 
   it("should load the about me page", () => {
