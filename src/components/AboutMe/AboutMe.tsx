@@ -44,12 +44,12 @@ function AboutMe() {
         <div className="margin-left-50">
           <h3>Why coding?</h3>
           <p>
-            While I was working in a world Part of my role was to collaborate
-            with our software developer to automate and improve our lab
-            inventory management system. Over time I found I was enjoying this
-            more than my day job, and wished I could code and do more of it. I
-            loved the process of building something, the speed of delivery, and
-            the ability for immediate impact and rapid feedback.
+            While I was working as a scienitst, part of my role was to
+            collaborate with our software developer to automate and improve our
+            lab inventory management system. Over time I found I was enjoying
+            this more than my day job, and wished I could code and do more of
+            it. I loved the process of building something, the speed of
+            delivery, and the ability for immediate impact and rapid feedback.
           </p>
           <p>
             I decided to make the jump, and enrolled on the School of Code (SoC)
