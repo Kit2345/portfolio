@@ -5,13 +5,12 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
+import { Page } from "./types/common";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("about");
+  const [currentPage, setCurrentPage] = useState<Page>("about");
 
-  type pageProps = "about" | "contact";
-
-  function handleButtonClick(page: pageProps) {
+  function handleButtonClick(page: Page) {
     // event?.preventDefault();
     setCurrentPage(page);
   }

@@ -1,7 +1,7 @@
 import { screen, render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "./App";
-import AboutMe from "./components/AboutMe/AboutMe";
+// import AboutMe from "./components/AboutMe/AboutMe";
 
 describe("App tests", () => {
   beforeEach(() => render(<App />));
