@@ -77,8 +77,12 @@
   text-align: top;
 }
 
-.user-name {
+.margin-left-10 {
   margin-left: 10px;
+}
+
+.margin-left-50 {
+  margin-left: 50px;
 }
 
 .text-black {
