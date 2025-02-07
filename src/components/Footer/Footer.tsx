@@ -1,6 +1,13 @@
 import crown_rarity_image from "../../assets/crown-rarity-symbol.png";
+import { Page } from "../../types/common";
 
-function Footer({ onButtonClick }) {
+type onButtonClick = (page: Page) => void;
+
+interface FooterProps {
+  onButtonClick: onButtonClick;
+}
+
+function Footer({ onButtonClick }: FooterProps) {
   return (
     <div>
       <button aria-label="about me" onClick={() => onButtonClick("about")}>
