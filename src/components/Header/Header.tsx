@@ -8,11 +8,11 @@ function Header() {
           Full-stack Developer
         </div>
 
-        <div id="user-name" className="user-name">
+        <div id="user-name" className="margin-left-10">
           <h3>Wing-Kit Leung</h3>
         </div>
       </div>
-      <div>
+      <div className="flex-row-center">
         <button id="menu-button" aria-label="menu">
           menu
         </button>

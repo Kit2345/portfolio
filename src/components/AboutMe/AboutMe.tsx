@@ -3,17 +3,25 @@ import grassEnergy from "../../assets/grass_energy_card_vector_symbol_by_biochao
 
 function AboutMe() {
   return (
-    <>
-      <div>
+    <section className="width-80">
+      <div className="margin-left-50">
         <h1>About Me</h1>
       </div>
+
+      <div className="flex-row-center-left">
+        <div>
+          <img
+            src={colourlessEnergy}
+            alt="colourless energy"
+            className="energy-symbol"
+          />
+        </div>
+
+        <div>
+          <h3 className="margin-left-50">Background:</h3>
+        </div>
+      </div>
       <div>
-        <img
-          src={colourlessEnergy}
-          alt="colourless energy"
-          className="energy-symbol"
-        />
-        <h3>Background:</h3>
         <p>
           I'm a former academic scientist in cancer research and now looking to
           transition to become a software developer. As a scientist I have
@@ -31,12 +39,20 @@ function AboutMe() {
           change.
         </p>
       </div>
+
+      <div className="flex-row-center-left">
+        <div>
+          <img src={grassEnergy} alt="grass energy" className="energy-symbol" />
+        </div>
+        <div className="margin-left-50">
+          <h3>Why coding?</h3>
+        </div>
+      </div>
+
       <div>
-        <img src={grassEnergy} alt="grass energy" className="energy-symbol" />
-        <h3>Why coding?</h3>
         <p>
-          While I was working in a world Part of my role was to collaborate with
-          our software developer to automate and improve our lab inventory
+          While I was working as a scienitst, part of my role was to collaborate
+          with our software developer to automate and improve our lab inventory
           management system. Over time I found I was enjoying this more than my
           day job, and wished I could code and do more of it. I loved the
           process of building something, the speed of delivery, and the ability
@@ -50,27 +66,35 @@ function AboutMe() {
           these projects.
         </p>
       </div>
+
+      <div className="flex-row-center-left">
+        <div>
+          <img src={grassEnergy} alt="grass energy" className="energy-symbol" />
+        </div>
+        <div className="margin-left-50">
+          <h3>What do I enjoy outside work?</h3>
+        </div>
+      </div>
+
       <div>
-        <img src={grassEnergy} alt="grass energy" className="energy-symbol" />
-        <h3>What do I enjoy outside work?</h3>
         <p>
           I took up sewing a few years ago, I find it relaxing and gives me a
           creative outlet. I love the iteration of make a mockup, identify
           problems, research solutions, and then make another attempt. I'm
           currently on my third pair of trousers, and each atttempt is an
-          improvement and wearable.{" "}
+          improvement and wearable.
         </p>
         <p>
           I play video games and boardgames especially strategy and RPGs. I'm
-          currently playing a lot of Wingspan, Hearthstone and Fire Emblem.{" "}
+          currently playing a lot of Wingspan, Hearthstone and Fire Emblem.
         </p>
         <p>
           I gained a love of travel when I visited South Africa with friends. It
           was amazing seeing the different cultures, exploring new places, and
-          tasting the local food.{" "}
+          tasting the local food.
         </p>
       </div>
-    </>
+    </section>
   );
 }
 
