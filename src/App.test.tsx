@@ -20,7 +20,7 @@ describe("App tests", () => {
     expect(result).toHaveTextContent("Get in contact");
   });
 
-  it("About Me Button should load Contact Me page", async () => {
+  it("About Me Button should load About Me page", async () => {
     const user = userEvent.setup();
     const contactMeButton = screen.getByRole("button", { name: /contact me/i });
     const aboutMeButton = screen.getByRole("button", { name: /about me/i });
@@ -33,5 +33,17 @@ describe("App tests", () => {
 
     let result = screen.getByRole("heading", { level: 1 });
     expect(result).toHaveTextContent("About Me");
+  });
+
+  it("Projects button should load projects page", async () => {
+    const projectButton = screen.getByRole("button", { name: /projects/i });
+
+    expect(projectButton).toBeEnabled();
+    expect(projectButton).toBeInTheDocument();
+
+    await userEvent.click(projectButton);
+
+    let result = screen.getByRole("heading", { level: 1 });
+    expect(result).toHaveTextContent("Projects");
   });
 });

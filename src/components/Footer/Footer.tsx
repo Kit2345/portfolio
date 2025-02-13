@@ -13,7 +13,9 @@ function Footer({ onButtonClick }: FooterProps) {
       <button aria-label="about me" onClick={() => onButtonClick("about")}>
         About Me
       </button>
-      <button aria-label="projects">Projects</button>
+      <button aria-label="projects" onClick={() => onButtonClick("projects")}>
+        Projects
+      </button>
       <button aria-label="contact me" onClick={() => onButtonClick("contact")}>
         Contact Me
       </button>

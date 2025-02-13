@@ -1,6 +1,7 @@
 import AboutMe from "../AboutMe/AboutMe";
 import ContactMe from "../ContactMe/ContactMe";
 import { Page } from "../../types/common";
+import ProjectsPage from "../Projects/ProjectsPage";
 
 type MainProps = { page: Page };
 
@@ -16,6 +17,12 @@ function Main({ page }: MainProps) {
       return (
         <>
           <ContactMe />
+        </>
+      );
+    case "projects":
+      return (
+        <>
+          <ProjectsPage />
         </>
       );
   }
