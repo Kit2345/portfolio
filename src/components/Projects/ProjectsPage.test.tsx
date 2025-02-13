@@ -11,4 +11,10 @@ describe("projects page renders properly", () => {
     expect(projetsHeading).toBeInTheDocument;
     expect(projetsHeading).toHaveTextContent("Projects");
   });
+
+  it("should have a project called Stitch the Weather", () => {
+    const stitch = screen.getByRole("heading", { level: 3 });
+    expect(stitch).toBeInTheDocument;
+    expect(stitch).toHaveTextContent("Stitch the Weather");
+  });
 });
