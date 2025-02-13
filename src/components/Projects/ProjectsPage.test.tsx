@@ -12,16 +12,22 @@ describe("projects page renders properly", () => {
     expect(projetsHeading).toHaveTextContent("Projects");
   });
 
-  it("should have a project called Stitch the Weather", () => {
+  it("should have multiple projects", () => {
+    const projectHeadings = screen.getAllByRole("heading", { level: 3 });
+    expect(projectHeadings.length).toBeGreaterThan(2);
+  });
+
+  it("should have a project called Stitch the Weather, with a demo link and repo link", () => {
     const headings = screen.getAllByRole("heading", { level: 3 });
     const stitch = headings.some(
       (heading) => heading.textContent === "Stitch the Weather"
     );
     expect(stitch).toBe(true);
-  });
 
-  it("should have multiple projects", () => {
-    const projectHeadings = screen.getAllByRole("heading", { level: 3 });
-    expect(projectHeadings.length).toBeGreaterThan(2);
+    const demoLink = screen.getByRole("link", { name: /demo link/i });
+    expect(demoLink).toBeInTheDocument;
+
+    const repoLink = screen.getByRole("link", { name: /repo link/i });
+    expect(repoLink).toBeInTheDocument;
   });
 });

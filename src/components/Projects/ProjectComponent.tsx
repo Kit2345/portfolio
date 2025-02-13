@@ -18,6 +18,18 @@ export function ProjectComponent({ projectsList }: ProjectList) {
       <h3>{project.title}</h3>
       {project.description && <p>What's the aim of the project?</p>}
       {project.description && <p>{project.description}</p>}
+      <p>
+        {project.link && (
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            Demo link
+          </a>
+        )}
+      </p>
+      {project.repo && (
+        <a href={project.repo} target="_blank" rel="noopener noreferrer">
+          Repo link
+        </a>
+      )}
     </div>
   ));
 }
