@@ -13,8 +13,15 @@ describe("projects page renders properly", () => {
   });
 
   it("should have a project called Stitch the Weather", () => {
-    const stitch = screen.getByRole("heading", { level: 3 });
-    expect(stitch).toBeInTheDocument;
-    expect(stitch).toHaveTextContent("Stitch the Weather");
+    const headings = screen.getAllByRole("heading", { level: 3 });
+    const stitch = headings.some(
+      (heading) => heading.textContent === "Stitch the Weather"
+    );
+    expect(stitch).toBe(true);
+  });
+
+  it("should have multiple projects", () => {
+    const projectHeadings = screen.getAllByRole("heading", { level: 3 });
+    expect(projectHeadings.length).toBeGreaterThan(2);
   });
 });

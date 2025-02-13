@@ -1,4 +1,13 @@
+import { ProjectComponent } from "./Project";
+
 function ProjectsPage() {
+  const ProjectList = [
+    { title: "Stitch the Weather" },
+    { title: "Test2" },
+    { title: "Test3" },
+    { title: "Test4" },
+  ];
+
   return (
     <>
       <section>
@@ -6,10 +15,7 @@ function ProjectsPage() {
           <h1>Projects</h1>
         </div>
 
-        <div>
-          <h3>Stitch the Weather</h3>
-          <p></p>
-        </div>
+        <ProjectComponent projectsList={ProjectList} />
       </section>
     </>
   );
